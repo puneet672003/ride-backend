@@ -568,7 +568,7 @@ describe('Cab Listing API', () => {
 		);
 
 		expect(res.statusCode).not.toBe(500);
-		expect([200, 400, 404]).toContain(res.statusCode);
+		expect([400, 404]).toContain(res.statusCode);
 	});
 
 	// Test 22: Partial location parameters
